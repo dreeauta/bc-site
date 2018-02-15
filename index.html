@@ -2,65 +2,112 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
     <title>Blade Coin</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+
+
 
     <script type="text/javascript" src="script.js">
     </script>
   </head>
   <body>
-    <nav>
-      <div class="logo">
+    <section class="menu-wrapper">
+        <nav>
+        <ul>
+          <li> <a class="logo" href="#"> (BLA) Coin </a></li>
+          <li> <a href="#"> HOME </a></li>
+          <li> <a href="#"> COMPARE</a></li>
+          <li> <a href="#"> ABOUT </a></li>
+          <li> <a href="#"> ROADMAP </a></li>
+          <li> <a href="#"> CONTACT</a></li>
 
-      </div>
-      <ul>
-        <li> <a href="#"> Home </a></li>
-        <li> <a href="#"> Compare</a></li>
-        <li> <a href="#"> Roadmap </a></li>
-        <li> <a href="#"> About </a></li>
-        <li> <a href="#"> Contact</a></li>
+        </ul>
+      </nav>
+    </section>
 
-      </ul>
-    </nav>
     <section class="header-wrapper">
+      <div class="header-video">
+        <video autoplay muted loop >
+          <source src="assets/header-bg.mp4" type="video/mp4">
+        </video>
+      </div>
       <div class="header-container">
-        <div class="header-title">
-          BLADE COIN
-          <span>   2018 Relaunch of the Classic
-            BLADE Coin (BLA) </span>
-        </div>
-        <div class="header-subtitle">
-          Blade Coin will realign itself at the foremost position in the Crypto World.
-            The Best Team in Crypto will be sure not to disappoint!
-        </div>
-        <a href="#"> Download Wallet </a>
-        <p>Download The Wallet Now! </p>
+          <div class="header-title-container">
+            <span class="blade-title"> BLADE COIN </span>
+            <span class="blade-title-info">   2018 Relaunch of the Classic
+              BLADE Coin (BLA) </span>
+          </div>
+          <div class="header-subtitle-container">
+              Blade Coin will realign itself at the foremost position in the Crypto World.
+              The Best Team in Crypto will be sure not to disappoint!
+          </div>
+          <div class="download-btn-container">
+              <a class="download-btn" href="#"> DOWNLOAD WALLET </a>
+              <span> Download The Wallet Now! </span>
+          </div>
       </div>
     </section>
 
     <section class="roadmap-wrapper">
       <div class="roadmap-container">
-        <div class="contact">
+        <h2> RoadMap</h2>
+        <div class="line">
+        </div>
+        <div class="line">
+        </div>
+        <div class="line">
+        </div>
+
+      </div>
+    </section>
+
+    <section class="about-wrapper">
+      <div class="about-container">
+        <h2> Meet the Team</h2>
+        <div class="about-image-container">
+          <div> <img src="assets/profile.jpeg">
+            <div> Person #1
+                <span> Title </span>
+            </div>
+          </div>
+          <div> <img src="assets/profile.jpeg">
+            <div> Person #1
+                <span> Title </span>
+            </div>
+          </div>
+          <div> <img src="assets/profile.jpeg">
+            <div> Person #1
+                <span> Title </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-wrapper">
+      <div class="contact-container clearfix">
+        <div class="contact-paragraph">
           <h2> Contact</h2>
           <p> I'm a paragraph. Click here to add your own text and edit me.
           I’m a great place for you to tell a story and let your users know a little more about you.
 
           <span class="info">
-            info@mysite.com
-
-          Tel: 1-800-000-0000 </span>
-        </p>
+            info@mysite.com <br>
+            Tel: 1-800-000-0000 </span>
+          </p>
 
         </div>
         <div class="contact-form">
           <form>
             <input class="name" type="text" name="Name" value="Name">
-            <input class="email" type="text" name="Name" value="Name">
-            <input class="subject" type="text" name="Name" value="Name">
+            <input class="email" type="text" name="Email" value="Email">
+            <input class="subject" type="text" name="Subject" value="Subject">
             <textarea name="textarea" rows="1" >
             </textarea>
             <button type="button" name="button">
-            <a> Submit </a></button>
+            <a> SUBMIT </a></button>
           </form>
         </div>
       </div>

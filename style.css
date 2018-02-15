@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+
+section {
+  color: white;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.menu-wrapper {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+nav {
+  word-spacing: 30px;
+  background-color: black;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 300;
+
+}
+
+nav ul {
+  padding-top: 50px;
+}
+
+nav li:first-child {
+   word-spacing: 2px;
+}
+
+.menu-wrapper li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.menu-wrapper ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.menu-wrapper ul a:hover {
+  border-bottom: 1px solid gold;
+  padding-bottom: 5px;
+  color: gold;
+}
+
+.header-wrapper {
+  height: 550px;
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-top:50px;
+}
+
+.header-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.header-container {
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+  z-index: 100;
+  background-color: rgba(0,0,0,.6);
+  padding: 30px;
+  color: white;
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: auto;
+}
+
+
+.header-title-container {
+  font-size: 53px;
+  margin: auto;
+}
+
+.blade-title {
+  letter-spacing: .1em;
+}
+
+.blade-title-info {
+  font-size: 14px;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.header-subtitle-container {
+  width: 70%;
+  margin: auto;
+  height: 80px;
+  line-height: 30px;
+  height: 150px;
+}
+
+.download-btn-container {
+  height: 100px;
+}
+
+.download-btn-container a {
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  display: block;
+  width: 140px;
+  margin: auto;
+  width: 220px;
+  margin-bottom: 15px;
+}
+
+.download-btn-container a:hover {
+  background-color: gold;
+  color: white;
+}
+
+
+.download-btn-container span {
+  font-size: 12px;
+}
+
+.roadmap-wrapper {
+  height: 500px;
+  background-color: gold;
+}
+
+.roadmap-container {
+  padding: 50px 0;
+}
+
+
+.roadmap-container .line {
+  height: 100px;
+  width: 5px;
+  background-color:white;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.roadmap-container h2 {
+   text-align: center;
+}
+
+.about-wrapper {
+  background-color: darkblue;
+  height: 600px;
+}
+
+.about-container {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-image-container {
+  margin: auto;
+  width: 80%;
+  padding-top: 40px;
+}
+
+.about-image-container div {
+  width: 30%;
+  padding: 0 10px;
+  display: inline-block;
+}
+
+.about-image-container img {
+  width: 100%;
+  padding: 0 10px;
+}
+
+
+.contact-wrapper {
+  background-color: darkblue;
+  height: 350px;
+  display: flex;
+}
+
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.contact-paragraph {
+  width: 50%;
+  display:inline-block;
+}
+
+.contact-paragraph h2, .contact-paragraph p {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.contact-paragraph .info {
+  width: 50%;
+  display: block;
+  padding-top: 30px;
+}
+
+
+.contact-form {
+  width: 50%;
+  float: right;
+  display: inline-block;
+}
+
+.contact-form input {
+  margin: 5px 0;
+}
+
+.contact-form .name, .contact-form .email {
+  width: 30%;
+  display: inline;
+}
+
+.contact-form .subject {
+  width: 60%;
+}
+
+.contact-form textarea {
+  width: 60%;
+  height: 170px;
+  margin-top: 5px;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  display: block;
+  width: 190px;
+  height: 40px;
+}

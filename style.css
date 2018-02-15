@@ -2,9 +2,70 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x:hidden;
+  font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+html, body {
+  margin:0;
+  padding:0;
+}
+
 section {
   color: white;
 }
+
+
+/* flip cards */
+.flip-container {
+  perspective: 300px;
+  position: relative;
+
+}
+
+.flip-container img {
+  width: 300px;
+  height: 200px;
+}
+
+.flip-container:hover {
+  filter: contrast(50%);
+}
+
+.flip-container.hover .flipper {
+  transform: rotateX(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+  width: 300px;
+  height: 200px;
+}
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+.front,
+.back {
+  backface-visibility: hidden;
+
+}
+.front {
+  z-index: 2;
+  transform: rotateX(0deg);
+}
+.back {
+  transform: rotateX(180deg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: black;
+}
+/* flip cards */
 
 .clearfix:after {
     clear: both;
@@ -22,7 +83,6 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: 'Nanum Gothic', sans-serif;
 }
 
 nav {
@@ -41,6 +101,12 @@ nav ul {
 
 nav li:first-child {
    word-spacing: 2px;
+   font-weight: 700;
+   padding: 5px;
+}
+
+nav li:first-child:hover {
+    border: 2px solid gold;
 }
 
 .menu-wrapper li {
@@ -48,7 +114,7 @@ nav li:first-child {
   display: inline-block;
 }
 
-.menu-wrapper ul a {
+.menu-wrapper ul a{
   text-decoration: none;
   color: white;
   font-size: 14px;
@@ -104,10 +170,11 @@ nav li:first-child {
 
 .blade-title {
   letter-spacing: .1em;
+  font-weight: 700;
 }
 
 .blade-title-info {
-  font-size: 14px;
+  font-size: 12px;
   display: inline-block;
   width: 100%;
   padding-bottom: 40px;
@@ -135,6 +202,7 @@ nav li:first-child {
   margin: auto;
   width: 220px;
   margin-bottom: 15px;
+  font-weight: 700;
 }
 
 .download-btn-container a:hover {
@@ -163,6 +231,7 @@ nav li:first-child {
   background-color:white;
   margin: auto;
   margin-bottom: 20px;
+  opacity: 0;
 }
 
 .roadmap-container h2 {
@@ -171,7 +240,6 @@ nav li:first-child {
 
 .about-wrapper {
   background-color: darkblue;
-  height: 600px;
 }
 
 .about-container {
@@ -181,26 +249,34 @@ nav li:first-child {
 
 .about-image-container {
   margin: auto;
-  width: 80%;
+  width: 90%;
   padding-top: 40px;
 }
 
 .about-image-container div {
-  width: 30%;
-  padding: 0 10px;
+  /* width: 30%;
+  padding: 0 10px; */
   display: inline-block;
 }
 
-.about-image-container img {
-  width: 100%;
+.about-us-images {
+  padding-top: 80px;
+}
+
+.about-us-images img {
+  width: 300px;
   padding: 0 10px;
 }
 
+.about-us-images div {
+  display: inline-block;
+  width: 300px;
+}
 
 .contact-wrapper {
-  background-color: darkblue;
-  height: 350px;
   display: flex;
+  background-color: gold;
+  padding: 100px 0px;
 }
 
 
@@ -208,6 +284,15 @@ nav li:first-child {
   display: flex;
   align-items: center;
   font-family: 'Nanum Gothic', sans-serif;
+  width: 80%;
+  margin: auto;
+  background-color: rgba(0,0,0,.6);
+  height: 410px;
+}
+
+.contact-paragraph-form {
+  width: 90%;
+  margin: auto;
 }
 
 .contact-paragraph {
@@ -216,7 +301,7 @@ nav li:first-child {
 }
 
 .contact-paragraph h2, .contact-paragraph p {
-  width: 60%;
+  width: 80%;
   margin: 20px auto;
 }
 
@@ -238,16 +323,16 @@ nav li:first-child {
 }
 
 .contact-form .name, .contact-form .email {
-  width: 30%;
+  width: 44%;
   display: inline;
 }
 
 .contact-form .subject {
-  width: 60%;
+  width: 90%;
 }
 
 .contact-form textarea {
-  width: 60%;
+  width: 90%;
   height: 170px;
   margin-top: 5px;
 }
@@ -255,6 +340,32 @@ nav li:first-child {
 .contact-form button {
   margin-top: 15px;
   display: block;
-  width: 190px;
+  width: 90%;
   height: 40px;
+}
+
+footer {
+  background-color: black;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+footer li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 30px;
+}
+
+footer ul a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+}
+
+footer ul a:hover {
+  border-bottom: 1px solid gold;
+  padding-bottom: 5px;
+  color: gold;
 }

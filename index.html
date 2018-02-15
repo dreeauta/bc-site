@@ -4,10 +4,13 @@
     <meta charset="utf-8">
     <title>Blade Coin</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
 
 
-
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
     <script type="text/javascript" src="script.js">
     </script>
   </head>
@@ -17,10 +20,9 @@
         <ul>
           <li> <a class="logo" href="#"> (BLA) Coin </a></li>
           <li> <a href="#"> HOME </a></li>
-          <li> <a href="#"> COMPARE</a></li>
-          <li> <a href="#"> ABOUT </a></li>
-          <li> <a href="#"> ROADMAP </a></li>
-          <li> <a href="#"> CONTACT</a></li>
+          <li> <a href="#roadmap"> ROADMAP </a></li>
+          <li> <a href="#about"> ABOUT </a></li>
+          <li> <a href="#contact"> CONTACT</a></li>
 
         </ul>
       </nav>
@@ -49,7 +51,7 @@
       </div>
     </section>
 
-    <section class="roadmap-wrapper">
+    <section id="roadmap" class="roadmap-wrapper">
       <div class="roadmap-container">
         <h2> RoadMap</h2>
         <div class="line">
@@ -62,55 +64,125 @@
       </div>
     </section>
 
-    <section class="about-wrapper">
+
+
+    <section id="about" class="about-wrapper">
       <div class="about-container">
         <h2> Meet the Team</h2>
         <div class="about-image-container">
-          <div> <img src="assets/profile.jpeg">
-            <div> Person #1
-                <span> Title </span>
+          Option #1
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <div>
+                  <img src="assets/profile.jpeg">
+                </div>
+              </div>
+              <div class="back">
+                <div> Person #1
+                    <span> Title </span>
+                </div>
+              </div>
             </div>
           </div>
-          <div> <img src="assets/profile.jpeg">
-            <div> Person #1
-                <span> Title </span>
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <div>
+                  <img src="assets/profile.jpeg">
+                </div>
+              </div>
+              <div class="back">
+                <div> Person #1
+                    <span> Title </span>
+                </div>
+              </div>
             </div>
           </div>
-          <div> <img src="assets/profile.jpeg">
-            <div> Person #1
-                <span> Title </span>
+          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+              <div class="front">
+                <div>
+                  <img src="assets/profile.jpeg">
+                </div>
+              </div>
+              <div class="back">
+                <div> Person #1
+                    <span> Title </span>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="about-us-images">
+            Options #2
+            <div>
+              <img src="assets/profile.jpeg">
+              <div class="about-title"> Person #1
+                  <span> Title </span>
+              </div>
+            </div>
 
+            <div>
+              <img src="assets/profile.jpeg">
+            <div class="about-title"> Person #1
+                <span> Title </span>
+            </div>
+            </div>
+
+            <div>
+              <img src="assets/profile.jpeg">
+            <div class="about-title"> Person #1
+                <span> Title </span>
+            </div>
+            </div>
         </div>
       </div>
+
+
     </section>
 
-    <section class="contact-wrapper">
-      <div class="contact-container clearfix">
-        <div class="contact-paragraph">
-          <h2> Contact</h2>
-          <p> I'm a paragraph. Click here to add your own text and edit me.
-          I’m a great place for you to tell a story and let your users know a little more about you.
+    <section id="contact" class="contact-wrapper">
+      <div  class="contact-container clearfix">
+          <div class="contact-paragraph-form">
+            <div class="contact-paragraph">
+              <h2> Contact</h2>
+              <p> I'm a paragraph. Click here to add your own text and edit me.
+              I’m a great place for you to tell a story and let your users know a little more about you.
 
-          <span class="info">
-            info@mysite.com <br>
-            Tel: 1-800-000-0000 </span>
-          </p>
+              <span class="info">
+                info@mysite.com <br>
+                Tel: 1-800-000-0000 </span>
+              </p>
 
-        </div>
-        <div class="contact-form">
-          <form>
-            <input class="name" type="text" name="Name" value="Name">
-            <input class="email" type="text" name="Email" value="Email">
-            <input class="subject" type="text" name="Subject" value="Subject">
-            <textarea name="textarea" rows="1" >
-            </textarea>
-            <button type="button" name="button">
-            <a> SUBMIT </a></button>
-          </form>
-        </div>
+            </div>
+            <div class="contact-form">
+              <form>
+                <input class="name" type="text" name="Name" value="Name">
+                <input class="email" type="text" name="Email" value="Email">
+                <input class="subject" type="text" name="Subject" value="Subject">
+                <textarea name="textarea" rows="1" >
+                </textarea>
+                <button type="button" name="button">
+                <a> SUBMIT </a></button>
+              </form>
+            </div>
+          </div>
       </div>
     </section>
+    <footer>
+        <div class="footer-menu">
+          <ul>
+            <li> <a class="logo" href="#"> (BLA) Coin </a></li>
+            <li> <a href="#"> HOME </a></li>
+            <li> <a href="#"> ROADMAP</a></li>
+            <li> <a href="#"> ABOUT </a></li>
+            <li> <a href="#"> CONTACT</a></li>
+
+          </ul>
+        </div>
+        <div class="social">
+        </div>
+    </footer>
   </body>
 </html>

@@ -17,7 +17,7 @@ $(document).ready(function() {
 
 
   var RoadMap = $(".roadmap-wrapper").offset().top;
-  // 
+  //
   // $(document).scroll(function() {
   //     if($(this).scrollTop() > 770 ) {
   //

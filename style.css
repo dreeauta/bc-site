@@ -83,16 +83,16 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
+  width: 100%;
 }
 
-nav {
+.navbar {
   word-spacing: 30px;
-  background-color: black;
+  background-color: rgba(0,0,0,.6);
   padding: 20px 0;
   position: fixed;
   width: 100%;
   z-index: 300;
-
 }
 
 nav ul {
@@ -220,11 +220,15 @@ nav li:first-child:hover {
 
 .exchange-wrapper {
   height: 500px;
-  background-color: white;
-  color: black;
+  background-color: #174087;
+  color: white;
   text-align: center;
 }
 
+.exchange-container h2 {
+  padding-top: 50px;
+
+}
 
 .wallet-wrapper {
   background-color: red;
@@ -277,13 +281,17 @@ nav li:first-child:hover {
 
 .roadmap-wrapper {
   height: 500px;
-  background-color: gold;
+  background-color: #174087;
 }
 
 .roadmap-container {
   padding: 50px 0;
 }
 
+.roadmap-left {
+  position: absolute;
+  left: 30%;
+}
 
 .roadmap-container .line {
   height: 100px;
@@ -335,7 +343,7 @@ nav li:first-child:hover {
 
 .contact-wrapper {
   display: flex;
-  background-color: gold;
+  background-color: #174087;
   padding: 100px 0px;
 }
 

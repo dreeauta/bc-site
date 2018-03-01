@@ -16,6 +16,15 @@ $(document).ready(function() {
   });
 
 
+
+  $(document).ready(function() {
+    setTimeout(function() {
+      $(".header-container").show();
+      $(".navbar").show();
+
+    }, 3000);
+  });
+
   var RoadMap = $(".roadmap-wrapper").offset().top;
   //
   // $(document).scroll(function() {

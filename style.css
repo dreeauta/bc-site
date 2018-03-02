@@ -4,7 +4,6 @@
 
 body {
   overflow-x:hidden;
-  font-family: 'Nanum Gothic', sans-serif;
 
 }
 
@@ -17,6 +16,10 @@ section {
   color: white;
 }
 
+h2 {
+  font-family: 'Orbitron', sans-serif;
+
+}
 
 /* flip cards */
 .flip-container {
@@ -95,20 +98,26 @@ section {
   width: 100%;
   z-index: 300;
   display: none;
+  font-family: 'Orbitron', sans-serif;
 }
 
 nav ul {
   padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 800px;
+  margin: auto;
 }
 
 nav li:first-child {
    word-spacing: 2px;
    font-weight: 700;
-   padding: 5px;
 }
 
-nav li:first-child:hover {
-    border: 2px solid gold;
+
+nav .logo img {
+  width: 50px;
 }
 
 .menu-wrapper li {
@@ -128,8 +137,9 @@ nav li:first-child:hover {
   color: gold;
 }
 
+
 .header-wrapper {
-  height: 550px;
+  height: 700px;
   display: flex;
   width: 100%;
   position: relative;
@@ -153,18 +163,29 @@ nav li:first-child:hover {
   background-size: cover;
 }
 
-.header-container {
+.header-bg-container {
   width: 100%;
+  height: 100%;
   text-align: center;
   z-index: 100;
-  background-color: rgba(0,0,0,.6);
-  padding: 30px;
   color: white;
   font-family: 'Nanum Gothic', sans-serif;
   margin: auto;
+  margin-top: 35px;
+  background-image: url(assets/header-bg.png);
+  background-size: cover;
+  background-position: 0% 30%;
   display: none;
 }
 
+.header-container {
+  background-color: rgba(0,0,0,.8);
+  padding: 30px;
+  width: 70%;
+  margin: auto;
+  margin-top: 100px;
+  display: none;
+}
 
 .header-title-container {
   font-size: 53px;
@@ -172,11 +193,14 @@ nav li:first-child:hover {
   height: 120px;
   line-height: 30px;
   padding-top: 30px;
+  font-family: 'Orbitron', sans-serif;
+
 }
 
 .blade-title {
   letter-spacing: .1em;
   font-weight: 700;
+  text-shadow: 2px 2px #ff0000;
 }
 
 .blade-title-info {
@@ -205,16 +229,16 @@ nav li:first-child:hover {
   color: black;
   text-decoration: none;
   display: block;
-  width: 140px;
   margin: auto;
-  width: 220px;
+  width: 300px;
   margin-bottom: 15px;
   font-weight: 700;
+  font-family: 'Orbitron', sans-serif;
+
 }
 
 .download-btn-container a:hover {
-  background-color: gold;
-  color: white;
+  background-color: rgba(255,255,255,.6);
 }
 
 
@@ -233,24 +257,7 @@ nav li:first-child:hover {
   height: 500px;
 }
 
-.exchange-video video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background-size: cover;
-}
-
 .exchange-container h2 {
-  padding-top: 50px;
 
 }
 
@@ -266,12 +273,14 @@ nav li:first-child:hover {
   /* background-image: url(assets/wallet-bg.png);
   background-position: center; */
   background-attachment: fixed;
-  height: 500px;
+  height: 600px;
 }
+
 
 .wallet-container {
   background-color: rgba(0,0,0,.5);
 }
+
 
 .wallet-dl-container {
   width: 80%;
@@ -299,10 +308,12 @@ nav li:first-child:hover {
 .wallet-dl a {
   color: white;
   text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .wallet-dl a:hover {
   text-shadow: 2px 2px rgba(0,0,0,.7);
+  color: gold;
 }
 
 .roadmap-wrapper {
@@ -315,6 +326,10 @@ nav li:first-child:hover {
   position: relative;
 }
 
+.roadmap-container h2 {
+  margin-bottom: 70px;
+}
+
 .roadmap-left {
   position: absolute;
   left: 20%;
@@ -325,6 +340,7 @@ nav li:first-child:hover {
   position: absolute;
   width: 300px;
   left: 55%;
+  margin-top: 30px;
 }
 
 .roadmap-container .line {
@@ -377,8 +393,10 @@ nav li:first-child:hover {
 
 .contact-wrapper {
   display: flex;
-  background-color: #174087;
+  background-color: black;
   padding: 100px 0px;
+  background-image: url(assets/header-bg.png);
+  background-repeat: no-repeat;
 }
 
 
@@ -388,7 +406,7 @@ nav li:first-child:hover {
   font-family: 'Nanum Gothic', sans-serif;
   width: 80%;
   margin: auto;
-  background-color: rgba(0,0,0,.6);
+  background-color: rgba(0,0,0,.75);
   height: 410px;
   box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
 
@@ -466,6 +484,7 @@ footer ul a{
   color: white;
   font-size: 14px;
   padding: 5px;
+  font-family: 'Orbitron', sans-serif;
 }
 
 footer ul a:hover {

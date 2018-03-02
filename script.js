@@ -20,6 +20,8 @@ $(document).ready(function() {
   $(document).ready(function() {
     setTimeout(function() {
       $(".header-container").show();
+      $(".header-bg-container").show();
+
       $(".navbar").show();
 
     }, 3000);

@@ -131,9 +131,10 @@ nav .logo img {
   font-size: 14px;
 }
 
+
 .menu-wrapper ul a:hover {
-  border-bottom: 1px solid gold;
-  padding-bottom: 5px;
+  /* border-bottom: 1px solid gold;
+  padding-bottom: 5px; */
   color: gold;
 }
 
@@ -169,7 +170,7 @@ nav .logo img {
   text-align: center;
   z-index: 100;
   color: white;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: auto;
   margin-top: 35px;
   background-image: url(assets/header-bg.png);
@@ -200,7 +201,7 @@ nav .logo img {
 .blade-title {
   letter-spacing: .1em;
   font-weight: 700;
-  text-shadow: 2px 2px #ff0000;
+  text-shadow: 2px 2px #e5c100;
 }
 
 .blade-title-info {
@@ -304,6 +305,11 @@ nav .logo img {
   filter: invert(100%);
 }
 
+.wallet-dl img:hover {
+  border: 2px solid rgb(229, 193, 0);
+  filter: invert(20%);
+}
+
 
 .wallet-dl a {
   color: white;
@@ -313,7 +319,7 @@ nav .logo img {
 
 .wallet-dl a:hover {
   text-shadow: 2px 2px rgba(0,0,0,.7);
-  color: gold;
+  color: rgb(229, 193, 0);
 }
 
 .roadmap-wrapper {
@@ -322,17 +328,23 @@ nav .logo img {
 }
 
 .roadmap-container {
-  padding: 50px 0;
-  position: relative;
+  padding: 100px 0;
 }
 
 .roadmap-container h2 {
   margin-bottom: 70px;
 }
 
+.timeline-container {
+  width: 70%;
+  margin: auto;
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+}
+
 .roadmap-left {
   position: absolute;
-  left: 20%;
+  right: 52%;
   width: 300px;
 }
 
@@ -357,11 +369,11 @@ nav .logo img {
 }
 
 .about-wrapper {
-  background-color: darkblue;
+  background-color: black;
 }
 
 .about-container {
-  padding: 50px 0;
+  padding: 100px 0;
   text-align: center;
 }
 
@@ -403,12 +415,12 @@ nav .logo img {
 .contact-container {
   display: flex;
   align-items: center;
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Raleway', sans-serif;
   width: 80%;
   margin: auto;
   background-color: rgba(0,0,0,.75);
   height: 410px;
-  box-shadow: 5px 5px 2px 1px rgba(0, 0, 255, .2);
+  box-shadow: 5px 5px 2px 1px rgba(229, 193, 0, .2);
 
 }
 
@@ -445,7 +457,7 @@ nav .logo img {
 }
 
 .contact-form .name, .contact-form .email {
-  width: 44%;
+  width: 44.5%;
   display: inline;
 }
 
@@ -473,10 +485,23 @@ footer {
   align-items: center;
 }
 
+footer ul {
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 800px;
+  margin: auto;
+}
+
 footer li {
   list-style-type: none;
   display: inline-block;
   padding-right: 30px;
+}
+
+footer .logo img {
+  width: 50px;
 }
 
 footer ul a{
@@ -488,7 +513,5 @@ footer ul a{
 }
 
 footer ul a:hover {
-  border-bottom: 1px solid gold;
-  padding-bottom: 5px;
   color: gold;
 }

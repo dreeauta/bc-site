@@ -37,4 +37,36 @@ $(document).ready(function() {
   //     }
   // });
 
+  var wallet = $(".wallet-wrapper").offset().top;
+  $( ".wallet-dl" ).hide();
+
+  $(document).scroll(function() {
+    if($(this).scrollTop() > wallet - 300) {
+      $(".wallet-dl").each(function(index) {
+          $(this).delay(400*index).fadeIn(300);
+    });
+    }
+  })
+
+
+  var roadmap = $(".roadmap-wrapper").offset().top;
+  $( ".roadmap-left" ).hide();
+  $( ".roadmap-right" ).hide();
+  $( ".line" ).hide();
+
+
+  $(document).scroll(function() {
+    if($(this).scrollTop() > roadmap - 300) {
+        $(".line").each(function(index) {
+          $(this).delay(400*index).fadeIn(300);
+      });
+        $(".roadmap-left").each(function(index) {
+          $(this).delay(400*index).fadeIn(300);
+      });
+        $(".roadmap-right").each(function(index) {
+          $(this).delay(400*index).fadeIn(300);
+      });
+    }
+  })
+
 });

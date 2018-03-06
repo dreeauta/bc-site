@@ -93,7 +93,7 @@ h2 {
 .navbar {
   word-spacing: 30px;
   background-color: rgba(0,0,0,1);
-  padding: 20px 0;
+  padding: 0px 0;
   position: fixed;
   width: 100%;
   z-index: 300;
@@ -117,7 +117,8 @@ nav li:first-child {
 
 
 nav .logo img {
-  width: 50px;
+  width: 125px;
+  margin-top:5px;
 }
 
 .menu-wrapper li {
@@ -128,7 +129,8 @@ nav .logo img {
 .menu-wrapper ul a{
   text-decoration: none;
   color: white;
-  font-size: 14px;
+  font-size: 16px;
+  margin-right: 100px;
 }
 
 
@@ -501,7 +503,8 @@ footer li {
 }
 
 footer .logo img {
-  width: 50px;
+  width: 150px;
+  margin-top:25px;
 }
 
 footer ul a{

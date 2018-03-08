@@ -140,11 +140,11 @@ nav .logo img {
 
 
 .header-wrapper {
-  height: 700px;
   display: flex;
   width: 100%;
   position: relative;
   margin-top:50px;
+  height: 100vh;
 }
 
 
@@ -175,6 +175,7 @@ nav .logo img {
   margin-top: 35px;
   background-image: url(assets/header-bg.png);
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: 0% 30%;
   display: none;
 }
@@ -184,8 +185,8 @@ nav .logo img {
   padding: 30px;
   width: 70%;
   margin: auto;
-  margin-top: 100px;
   display: none;
+  margin-top: 100px;
 }
 
 .header-title-container {
@@ -274,7 +275,7 @@ nav .logo img {
   /* background-image: url(assets/wallet-bg.png);
   background-position: center; */
   background-attachment: fixed;
-  height: 600px;
+  height: 100vh;
 }
 
 
@@ -323,7 +324,7 @@ nav .logo img {
 }
 
 .roadmap-wrapper {
-  height: 700px;
+  height: 100vh;
   background-color: #174087;
 }
 
@@ -357,7 +358,7 @@ nav .logo img {
 
 .roadmap-container .line {
   height: 100px;
-  width: 5px;
+  width: 3px;
   background-color:white;
   margin: auto;
   margin-bottom: 20px;
@@ -416,7 +417,7 @@ nav .logo img {
   display: flex;
   align-items: center;
   font-family: 'Raleway', sans-serif;
-  width: 80%;
+  width: 1150px;
   margin: auto;
   background-color: rgba(0,0,0,.75);
   height: 410px;
@@ -480,13 +481,12 @@ nav .logo img {
 
 footer {
   background-color: black;
-  height: 400px;
+  height: 300px;
   display: flex;
   align-items: center;
 }
 
 footer ul {
-  padding-top: 80px;
   display: flex;
   align-items: center;
   justify-content: space-around;

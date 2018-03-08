@@ -1,20 +1,6 @@
 $(document).ready(function() {
 
 
-  var delay = 500;
-  $('.line:lt(5)').each(function(){
-                 //^^ do for every instance less than the 16th (starting at 0)
-      $(this).delay(delay).animate({
-          opacity:1
-      },500);
-      delay += 500;
-  });
-
-
-  $(document).on("click", ".flip-container", function () {
-      $(this).toggleClass('hover');
-  });
-
 
 
   $(document).ready(function() {
@@ -27,7 +13,7 @@ $(document).ready(function() {
     }, 3000);
   });
 
-  var RoadMap = $(".roadmap-wrapper").offset().top;
+  // var RoadMap = $(".roadmap-wrapper").offset().top;
   //
   // $(document).scroll(function() {
   //     if($(this).scrollTop() > 770 ) {
@@ -47,6 +33,15 @@ $(document).ready(function() {
     });
     }
   })
+
+  var delay = 500;
+  $('.line:lt(5)').each(function(){
+                 //^^ do for every instance less than the 16th (starting at 0)
+      $(this).delay(delay).animate({
+          opacity:1
+      },500);
+      delay += 500;
+  });
 
 
   var roadmap = $(".roadmap-wrapper").offset().top;
@@ -68,5 +63,11 @@ $(document).ready(function() {
       });
     }
   })
+
+  $(document).on("click", ".flip-container", function () {
+      $(this).toggleClass('hover');
+  });
+
+
 
 });

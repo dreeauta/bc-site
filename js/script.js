@@ -72,13 +72,24 @@ $(document).ready(function() {
   $(document).scroll(function() {
     if($(this).scrollTop() > about - 300) {
         $(".hvrbox").each(function(index) {
-          $(this).addClass("animated slideInUp");
           $(".row1").delay(400*index).fadeIn(300);
-          $(".row2").delay(400*index).fadeIn(300);
+          $(".row2").delay(2000*index).fadeIn(2000);
 
         });
       }
+
   });
+
+  // var about = $(".about-wrapper").offset().top;
+  // $( ".hvrbox" ).hide();
+  //
+  // $(document).scroll(function() {
+  //   if($(this).scrollTop() > about - 300) {
+  //     $(".hvrbox").each(function(index) {
+  //         $(this).delay(400*index).fadeIn(300);
+  //   });
+  //   }
+  // })
 
   var contact = $(".contact-wrapper").offset().top;
   $(".contact-container").hide();

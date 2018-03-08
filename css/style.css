@@ -479,6 +479,18 @@ nav .logo img {
   width: 50%;
   display: block;
   padding-top: 30px;
+  line-height: 30px;
+}
+
+.contact-paragraph a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-paragraph a:hover {
+  color: white;
+  padding-bottom: 3px;
+  border-bottom: 1px solid white;
 }
 
 

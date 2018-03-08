@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Blade Coin</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/flipcard.css">
+
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
@@ -13,8 +15,11 @@
       src="http://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"></script>
-    <script type="text/javascript" src="script.js">
+    <script type="text/javascript" src="js/script.js">
     </script>
+    <script type="text/javascript" src="js/flipanimation.js">
+    </script>
+
   </head>
   <body>
     <section class="menu-wrapper">
@@ -33,7 +38,7 @@
 
     <section class="header-wrapper">
       <div class="header-video">
-        <video autoplay muted > 
+        <video autoplay muted >
           <source src="assets/bg-video1.mp4" type="video/mp4">
         </video>
       </div>
@@ -45,7 +50,7 @@
               BLADECOIN (BLA) </span>
           </div>
           <div class="header-subtitle-container">
-              Artificial Intelligence is coming to the Blockchain! 
+              Artificial Intelligence is coming to the Blockchain!
               Bladecoin will be at the cutting edge of AI infused Blockchain services.
           </div>
           <div class="download-btn-container">
@@ -71,21 +76,21 @@
               <div class="wallet-dl animated bounce">
                   <a href="#">
                   <img src="assets/windows-icon.png" alt="">
-                  WINDOWS
+                  WINDOWS <br>
                   coming soon
                   </a>
               </div>
               <div class="wallet-dl animated bounce">
                   <a href="#">
                   <img src="assets/linux-icon.png" alt="">
-                  LINUX
+                  LINUX <br>
                   coming soon
                   </a>
               </div>
               <div class="wallet-dl animated bounce">
                   <a href="#">
                   <img src="assets/apple-icon.png" alt="">
-                  MAC
+                  MAC <br>
                   coming soon
                   </a>
               </div>
@@ -133,72 +138,44 @@
       <div class="about-container">
         <h2> The Bladecoin Team</h2>
         <div class="about-image-container">
-          Core developers
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-                <div>
-                  <img src="assets\ashton.jpg">
-                </div>
-              </div>
-              <div class="back">
-                <div> Ashton
-                    <span> Core dev</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-                <div>
-                  <img src="assets/andreeadev.JPG">
-                </div>
-              </div>
-              <div class="back">
-                <div> Andreea
-                    <span> Core and Webdev </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-            <div class="flipper">
-              <div class="front">
-                <div>
-                  <img src="assets/profile.jpeg">
-                </div>
-              </div>
-              <div class="back">
-                <div> Saad
-                    <span> Core Dev </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="about-us-images">
-            Options #2
-            <div>
-              <img src="assets/marlena.jpg">
-              <div class="about-title"> Marlena
-                  <span> Social Media and Marketing </span>
-              </div>
-            </div>
 
-            <div>
-              <img src="assets/profile.jpeg">
-            <div class="about-title"> Johhny
-                <span> Art and Graphics Design </span>
+          <div class="hvrbox row1">
+          	<img src="assets/ashton.jpg" class="hvrbox-layer_bottom">
+          	<div class="hvrbox-layer_top hvrbox-layer_slideup">
+          		<div class="hvrbox-text"> Ashton <br> Core dev </div>
+          	</div>
+          </div>
+          <div class="hvrbox row1">
+            <img src="assets/ashton.jpg" class="hvrbox-layer_bottom">
+            <div class="hvrbox-layer_top hvrbox-layer_slideup">
+              <div class="hvrbox-text"> Saad <br> Core dev </div>
             </div>
+          </div>
+          <div class="hvrbox row1">
+            <img src="assets/andreeadev.jpg" class="hvrbox-layer_bottom">
+            <div class="hvrbox-layer_top hvrbox-layer_slideup">
+              <div class="hvrbox-text"> Andreea <br> Web Developer </div>
             </div>
+          </div>
+          <div class="hvrbox row2">
+            <img src="assets/marlena.jpg" class="hvrbox-layer_bottom">
+            <div class="hvrbox-layer_top hvrbox-layer_slideup">
+              <div class="hvrbox-text"> Marlena <br> Social Media and Marketing </div>
+            </div>
+          </div>
+          <div class="hvrbox row2">
+            <img src="assets/ashton.jpg" class="hvrbox-layer_bottom">
+            <div class="hvrbox-layer_top hvrbox-layer_slideup">
+              <div class="hvrbox-text"> Johnny <br> Art and Graphics Design </div>
+            </div>
+          </div>
+          <div class="hvrbox row2">
+            <img src="assets/ashton.jpg" class="hvrbox-layer_bottom">
+            <div class="hvrbox-layer_top hvrbox-layer_slideup">
+              <div class="hvrbox-text"> Ashton <br> Core dev </div>
+            </div>
+          </div>
 
-            <div>
-              <img src="assets/profile.jpeg">
-            <div class="about-title"> Person #1
-                <span> Title </span>
-            </div>
-            </div>
         </div>
       </div>
 
@@ -210,11 +187,11 @@
           <div class="contact-paragraph-form">
             <div class="contact-paragraph">
               <h2> Contact</h2>
-              <p> The Bladecoin team is working tirelessly to bring new developments and features to Blade. 
+              <p> The Bladecoin team is working tirelessly to bring new developments and features to Blade.
                 If you have any questions about the project please contact us.
               <span class="info">
                 bladecoinhelp@gmail.com <br>
-                https://discord.gg/w2dEBXC </span>
+                <a href="https://discord.gg/w2dEBXC"> Discord</a> </span>
               </p>
 
             </div>

@@ -444,7 +444,6 @@ nav .logo img {
   padding: 100px 0px;
   background-image: url(../assets/header-bg.png);
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 
@@ -562,4 +561,12 @@ footer ul a{
 
 footer ul a:hover {
   color: gold;
+}
+
+
+@media only screen and (min-width: 1600px) {
+  .about-image-container {
+    width: 60%;
+    padding-top: 100px;
+  }
 }

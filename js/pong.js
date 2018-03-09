@@ -1,5 +1,5 @@
 
-var game = new Phaser.Game(800, 600, Phaser.AUTO, '', {
+var game = new Phaser.Game(800, 600, Phaser.AUTO, 'pong-game', {
   preload:preload,
   create: create,
   update: update
@@ -27,9 +27,13 @@ var game = new Phaser.Game(800, 600, Phaser.AUTO, '', {
     game.load.image('paddle','./assets/pong/paddle.png');
     game.load.image('ball', './assets/pong/ball.png');
 
+    game.load.audio('beep1', ['assets/pong/beep1.wav']);
+
+
   }
 
   function create(){
+
     //sets up position and placing on screen
     ball_launched = false;
     ball_velocity = 400; //velocity speed
@@ -63,8 +67,13 @@ var game = new Phaser.Game(800, 600, Phaser.AUTO, '', {
     control_paddle(paddle1, game.input.y);
 
     //check collision
-    game.physics.arcade.collide(paddle1, ball);
-    game.physics.arcade.collide(paddle2, ball);
+    game.physics.arcade.collide(paddle1, ball, function(){
+      game.sound.play('beep1');
+    }); //3rd parameter is callback when function happens
+
+    game.physics.arcade.collide(paddle2, ball, function(){
+      game.sound.play('beep1');
+    });
 
     if (ball.body.blocked.left) {
       score2+=1;

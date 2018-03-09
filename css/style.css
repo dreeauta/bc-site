@@ -191,21 +191,6 @@ nav .logo img {
   font-size: 12px;
 }
 
-.exchange-wrapper {
-  height: 500px;
-  background-color: #174087;
-  color: white;
-  text-align: center;
-}
-
-.exchange-container {
-  height: 500px;
-}
-
-.exchange-container h2 {
-
-}
-
 .wallet-wrapper {
   background-color: black;
   text-align: center;
@@ -312,10 +297,23 @@ nav .logo img {
    text-align: center;
 }
 
-.about-wrapper {
-  background-color: black;
+.pong-wrapper {
   height: 100vh;
-  margin-bottom:200px;
+  color: white;
+  background-color: white;
+  text-align: center;
+}
+
+#pong-game canvas{
+  margin: auto;
+  padding: 100px 0;
+}
+
+
+.about-wrapper {
+  height: 800px;
+  background-color: black;
+  padding-bottom:100px;
 }
 
 .about-wrapper h2 {

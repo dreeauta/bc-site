@@ -315,6 +315,7 @@ nav .logo img {
 .about-wrapper {
   background-color: black;
   height: 100vh;
+  margin-bottom:200px;
 }
 
 .about-wrapper h2 {
@@ -439,6 +440,7 @@ nav .logo img {
 }
 
 .contact-wrapper {
+  height: 900px
   display: flex;
   background-color: black;
   padding: 100px 0px;

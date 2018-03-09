@@ -95,7 +95,7 @@ $(document).ready(function() {
   $(".contact-container").hide();
 
   $(document).scroll(function() {
-    if($(this).scrollTop() > contact - 300) {
+    if($(this).scrollTop() > contact - 500) {
         $(".contact-container").each(function(index) {
           $(this).addClass("animated jello");
           $(this).delay(400*index).fadeIn(300);

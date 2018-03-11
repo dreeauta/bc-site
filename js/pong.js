@@ -36,10 +36,10 @@ var game = new Phaser.Game(800, 600, Phaser.AUTO, 'pong-game', {
 
     //sets up position and placing on screen
     ball_launched = false;
-    ball_velocity = 400; //velocity speed
+    ball_velocity = 400;   //velocity speed
 
-    paddle1 = create_paddle(0, game.world.centerY); //center in middle of the screen
-    paddle2 = create_paddle(game.world.width , game.world.centerY);
+    paddle1 = create_paddle(0, game.world.centerY);  //center in middle of the screen
+    paddle2 = create_paddle(game.world.width - 16, game.world.centerY);
     ball = create_ball(game.world.centerX, game.world.centerY);
 
     game.input.onDown.add(launch_ball, this);  //when input is down add event
@@ -84,7 +84,7 @@ var game = new Phaser.Game(800, 600, Phaser.AUTO, 'pong-game', {
 
     paddle2.body.velocity.setTo(ball.body.velocity.y);  //set AI
     paddle2.body.velocity.x = 0;
-    paddle2.body.maxVelocity.y = 250;
+    // paddle2.body.maxVelocity.y = 350;
 
   }
 

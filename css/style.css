@@ -309,6 +309,10 @@ nav .logo img {
   padding: 100px 0;
 }
 
+.invaders-wrapper {
+  height: 100vh;
+}
+
 
 .about-wrapper {
   height: 800px;

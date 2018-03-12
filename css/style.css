@@ -273,8 +273,10 @@ nav .logo img {
 
 .roadmap-left {
   position: absolute;
-  right: 55%;
+  right: 60%;
   width: 200px;
+  border: 2px solid white;
+  padding: 10px 30px;
 }
 
 .roadmap-right {
@@ -282,6 +284,9 @@ nav .logo img {
   width: 200px;
   left: 60%;
   margin-top: 30px;
+  border: 2px solid white;
+  padding: 10px 30px;
+
 }
 
 .roadmap-container .line {
@@ -298,15 +303,15 @@ nav .logo img {
 }
 
 .pong-wrapper {
-  height: 100vh;
+  height: 700px;
   color: white;
-  background-color: white;
+  background-color: #FFAB16;
   text-align: center;
 }
 
 #pong-game canvas{
   margin: auto;
-  padding: 100px 0;
+  padding-top: 100px;
 }
 
 .invaders-wrapper {
@@ -356,9 +361,11 @@ nav .logo img {
  width: 300px;
  height: 200px;
 }
+
 .hvrbox .hvrbox-layer_bottom {
  display: block;
 }
+
 .hvrbox .hvrbox-layer_top {
  opacity: 0;
  position: absolute;

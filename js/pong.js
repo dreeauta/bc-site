@@ -135,3 +135,8 @@ var game = new Phaser.Game(800, 600, Phaser.AUTO, 'pong-game', {
       ball.body.velocity.y = ball_velocity;
     }
   }
+
+  game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+game.scale.pageAlignHorizontally = true;
+game.scale.pageAlignVertically = true;
+game.scale.setScreenSize(true);

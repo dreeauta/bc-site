@@ -179,7 +179,6 @@ nav .logo img {
   margin-bottom: 15px;
   font-weight: 700;
   font-family: 'Orbitron', sans-serif;
-
 }
 
 .download-btn-container a:hover {
@@ -232,11 +231,39 @@ nav .logo img {
   border: 2px solid black;
   margin-bottom: 20px;
   filter: invert(100%);
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
 }
 
 .wallet-dl img:hover {
-  border: 2px solid rgb(229, 193, 0);
-  filter: invert(20%);
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
 }
 
 
@@ -244,16 +271,20 @@ nav .logo img {
   color: white;
   text-decoration: none;
   font-family: 'Orbitron', sans-serif;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
 }
 
-.wallet-dl a:hover {
-  text-shadow: 2px 2px rgba(0,0,0,.7);
-  color: rgb(229, 193, 0);
-}
 
 .roadmap-wrapper {
   height: 710px;
-  background-color: #174087;
+  background-color: #ECA106;
 }
 
 .roadmap-container {
@@ -274,17 +305,17 @@ nav .logo img {
 .roadmap-left {
   position: absolute;
   right: 60%;
-  width: 200px;
-  border: 2px solid white;
+  width: 300px;
+  border-bottom: 2px solid white;
   padding: 10px 30px;
 }
 
 .roadmap-right {
   position: absolute;
-  width: 200px;
+  width: 300px;
   left: 60%;
   margin-top: 30px;
-  border: 2px solid white;
+  border-bottom: 2px solid white;
   padding: 10px 30px;
 
 }
@@ -305,7 +336,7 @@ nav .logo img {
 .pong-wrapper {
   height: 700px;
   color: white;
-  background-color: #FFAB16;
+  background-color: #174087;
   text-align: center;
 }
 
@@ -449,7 +480,7 @@ nav .logo img {
 }
 
 .contact-wrapper {
-  height: 900px
+  height: 600px;
   display: flex;
   background-color: black;
   padding: 100px 0px;
@@ -572,6 +603,21 @@ footer ul a{
 
 footer ul a:hover {
   color: gold;
+}
+
+@media only screen and (min-width: 1400px) {
+
+  .header-container {
+    margin-top: 230px;
+  }
+
+  .wallet-dl-container {
+    padding-top: 30px;
+  }
+  
+  .about-image-container {
+    width: 80%;
+  }
 }
 
 

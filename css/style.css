@@ -609,6 +609,13 @@ footer ul a:hover {
 
 @media only screen and (max-width: 800px)  {
 
+  h2 {
+    font-size: 20px;
+  }
+
+  nav ul {
+    width: 300px;
+  }
 
   .header-bg-container {
     background-position: 50% 50%;
@@ -617,6 +624,10 @@ footer ul a:hover {
 
   .header-container {
     margin-top: 140px;
+  }
+
+  .header-title-container {
+    font-size: 30px;
   }
 
   .wallet-container {
@@ -629,7 +640,35 @@ footer ul a:hover {
   }
 
   .roadmap-left, .roadmap-right {
+    width: 120px;
+  }
+
+  .hvrbox img {
     width: 200px;
+    height: 150px;
+  }
+
+  .contact-wrapper {
+    height: 800px;
+  }
+
+  .contact-paragraph {
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
+
+  .contact-container {
+    height: 550px;
+  }
+
+  .contact-form {
+    width: 80%;
+    display: block;
+  }
+
+  footer ul {
+    width: 300px;
   }
 
 

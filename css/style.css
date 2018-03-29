@@ -333,22 +333,17 @@ nav .logo img {
    text-align: center;
 }
 
-.pong-wrapper {
+.invaders-wrapper {
   height: 700px;
   color: white;
   background-color: #174087;
   text-align: center;
 }
 
-#pong-game canvas{
+#invaders-game canvas{
   margin: auto;
   padding-top: 100px;
 }
-
-.invaders-wrapper {
-  height: 100vh;
-}
-
 
 .about-wrapper {
   background-color: black;
@@ -622,21 +617,47 @@ footer ul a:hover {
 
   }
 
+
   .header-container {
     margin-top: 140px;
+    height: 40%;
   }
 
   .header-title-container {
     font-size: 30px;
   }
 
+  .header-subtitle-container {
+    font-size: 12px;
+  }
+
+  .download-btn-container a {
+    margin-top: 40px;
+  }
+
   .wallet-container {
     width: 80%;
   }
 
+  .wallet-container h2 {
+    margin-bottom: 50px;
+  }
+
+  .wallet-dl-container {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+
+  .wallet-dl {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+
   .wallet-dl img {
-    width: 80px;
-    padding: 20px;
+    width: 100px;
+    padding: 30px;
   }
 
   .roadmap-left, .roadmap-right {
@@ -659,7 +680,7 @@ footer ul a:hover {
   }
 
   .contact-container {
-    height: 550px;
+    height: 700px;
   }
 
   .contact-form {

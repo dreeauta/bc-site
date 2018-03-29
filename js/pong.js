@@ -1,5 +1,10 @@
 
-var game = new Phaser.Game(800, 600, Phaser.AUTO, 'pong-game', {
+const Presets = {
+  'width': window.innerWidth < 480 ? 300 : window.innerWidth,
+  'height': window.innerHeight-32 < 320 ? 320 : window.innerHeight
+}
+
+var game = new Phaser.Game(Presets.width, Presets.height, Phaser.AUTO, 'pong-game', {
   preload:preload,
   create: create,
   update: update
